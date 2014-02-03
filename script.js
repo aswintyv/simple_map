@@ -43,7 +43,7 @@ function loadBranches(data){
 		var marker = new google.maps.Marker({
 			position: myLatlng,
 			title:branches[i].name,
-			icon: "http://mapicons.nicolasmollet.com/wp-content/uploads/mapicons/shape-default/color-3875d7/shapecolor-dark/shadow-1/border-white/symbolstyle-white/symbolshadowstyle-no/gradient-no/conference.png"
+			icon: "http://aswinteja.com/annapurna_gis/conference.png"
 		});
 		var str = "<div><h3>"+branches[i].name+"</h3><br /> <a onClick=\"loadClients('"+branches[i].name+"')\">Details</a> </div>";
 		marker.desc = str;
@@ -84,7 +84,7 @@ function loadClientsMarkers(data){
 			position: myLatlng,
 			title:data[i].group_name,
 			zIndex: 1,
-			icon: "http://mapicons.nicolasmollet.com/wp-content/uploads/mapicons/shape-default/color-3875d7/shapecolor-light/shadow-1/border-color/symbolstyle-color/symbolshadowstyle-no/gradient-bottomtop/group-2.png"
+			icon: "http://aswinteja.com/annapurna_gis/group-2.png"
 
 		});
 		var str = "<div><h3>"+data[i].group_name+"</h3><br /> "+data[i].village+"</div>";
@@ -101,7 +101,7 @@ function loadClientsMarkers(data){
 	var marker = new google.maps.Marker({
 		position: myLatlng,
 		title:branch.name,
-		icon: "http://mapicons.nicolasmollet.com/wp-content/uploads/mapicons/shape-default/color-3875d7/shapecolor-dark/shadow-1/border-white/symbolstyle-white/symbolshadowstyle-no/gradient-no/conference.png",
+		icon: "http://aswinteja.com/annapurna_gis/conference.png",
 		zIndex: 10
 
 
