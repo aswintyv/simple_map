@@ -57,7 +57,7 @@ function loadBranches(data){
 
 
 function loadClients(branch_name){
-	$('#alertMessage').html('Showing clients for '+branch_name);
+	$('#alertMessage').html('Showing clients for '+branch_name + '. Click <a onclick="javascript:initialize();">here</a> to reset');
 
 	for(var i = 0; i < branchMarkers.length; i++){
 		var marker = branchMarkers[i];
