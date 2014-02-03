@@ -13,7 +13,6 @@ if (mysqli_connect_errno())
   echo "Failed to connect to MySQL: " . mysqli_connect_error();
   }
 $branch = $_GET['branch_name'];
-$refresh = $_GET['refresh'];
 $result = $mysqli->query("select * from clients where branch_name like '".$branch."'");
 while ($row = $result->fetch_assoc()) {
 	if(!$row['lat']){
