@@ -35,6 +35,7 @@ function initialize() {
 }
 
 function loadBranches(data){
+	$('#alertMessage').html('Showing all branches now');
 	var branches = data;
 	branchMarkers = [];
 	for(var i = 0 ; i < branches.length; i++){
@@ -56,6 +57,8 @@ function loadBranches(data){
 
 
 function loadClients(branch_name){
+	$('#alertMessage').html('Showing clients for '+branch_name);
+
 	for(var i = 0; i < branchMarkers.length; i++){
 		var marker = branchMarkers[i];
 		marker.setMap(null);
